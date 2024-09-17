@@ -104,3 +104,25 @@
 .gallery .box-container .box .icons a:hover {
   color: var(--theme-color);
 }
+
+@media (max-width: 576px) {
+  .heading {
+      font-size: 2rem;
+  }
+
+  .gallery .box-container {
+      grid-template-columns: 1fr;
+  }
+
+  .gallery .box-container .box {
+      height: 12rem;
+  }
+
+  .gallery .box-container .box .title {
+      font-size: 1.2rem;
+  }
+
+  .gallery .box-container .box .icons a {
+      font-size: 1.2rem;
+  }
+}
