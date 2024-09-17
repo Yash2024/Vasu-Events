@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #222;
+  }
+  
+  section {
+    padding: 1rem 5%;
+  }
+  
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.0rem;
+  }
+  
+  .heading span {
+    color: var(--theme-color);
+    text-transform: uppercase;
+  }
+  
+  .service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .service .box-container .box {
+    border-radius: 0.5rem;
+    background: #333;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  
+  .service .box-container .box i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--theme-color);
+    color: #fff;
+  }
+  
+  .service .box-container .box h3 {
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .service .box-container .box p {
+    font-size: 1.2rem;
+    color: #eee;
+    line-height: 1.8;
+  }
+  .white-icon {
+    color: white;
+  }
+  

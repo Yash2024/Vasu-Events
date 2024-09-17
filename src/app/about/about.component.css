@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #222;
+  }
+  
+  section {
+    padding: 1rem 5%;
+  }
+
+  .heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  
+  .heading span {
+    color: var(--theme-color);
+    text-transform: uppercase;
+  }
+  
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .about .row .image {
+    flex: 1 1 38rem;
+    padding: 1rem;
+  }
+  
+  .about .row .image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1rem solid #333;
+  }
+  
+  .about .row .content {
+    flex: 1 1 38rem;
+  }
+  
+  .about .row .content h3 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .about .row .content p {
+    font-size: 1.3rem;
+    color: #eee;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    background: var(--theme-color);
+  }
