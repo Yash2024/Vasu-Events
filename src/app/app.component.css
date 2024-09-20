@@ -26,7 +26,6 @@ html {
 body {
   background: #222;
 }
-
 section {
   padding: 1rem 5%;
 }
@@ -172,61 +171,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 
-.theme-toggler {
-  position: fixed;
-  top: 10rem;
-  right: -20rem;
-  background: #333;
-  z-index: 1000;
-  width: 20rem;
-  text-align: center;
-}
-
-.theme-toggler.active {
-  right: 0;
-}
-
-.theme-toggler h3 {
-  color: #fff;
-  padding: 1rem 0;
-  font-size: 2rem;
-}
-
-.theme-toggler .buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.theme-toggler .buttons .theme-btn {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.theme-toggler .toggle-btn {
-  position: absolute;
-  top: 0;
-  left: -5.9rem;
-  padding: 1.3rem 1.5rem;
-  background: #333;
-  cursor: pointer;
-}
-
-.theme-toggler .toggle-btn i {
-  color: #fff;
-  font-size: 3rem;
-  animation: spin 4s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(360deg);
-  }
-}
 
 /* media queries  */
 
@@ -252,7 +196,7 @@ html::-webkit-scrollbar-thumb {
   .header .navbar {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 200px;
     right: 0;
     border-top: 0.1rem solid #222;
     background: #333;
@@ -271,13 +215,13 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     background: #222;
     border-radius: 0.5rem;
-    padding: 1.3rem;
-    margin: 1.3rem;
-    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
   }
 
   .home .content h3 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 

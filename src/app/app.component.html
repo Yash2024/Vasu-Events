@@ -26,13 +26,13 @@
        <a href="#" class="logo"><img src="assets\logo2.jpg"></a>
 
       <nav [ngClass]="{'active': isMenuOpen}" class="navbar">
-        <a href="#home" class="nav-link">home</a>
-        <a href="#service" class="nav-link">service</a>
-        <a href="#about" class="nav-link">about</a>
-        <a href="#gallery" class="nav-link">gallery</a>
+        <a href="#home" class="nav-link" (click)="toggleMenu()">Home</a>
+        <a href="#about" class="nav-link" (click)="toggleMenu()">About</a>
+        <a href="#service" class="nav-link" (click)="toggleMenu()">Service</a>
+        <a href="#gallery" class="nav-link" (click)="toggleMenu()">Gallery</a>
         <!-- <a href="#price" class="nav-link">prices</a> -->
-        <a href="#review" class="nav-link">review</a>
-        <a href="#contact" class="nav-link">contact</a>
+        <a href="#review" class="nav-link" (click)="toggleMenu()">Review</a>
+        <a href="#contact" class="nav-link" (click)="toggleMenu()">Contact</a>
       </nav>
 
       <div id="menu-bars" (click)="toggleMenu()" class="fas fa-bars"></div>
@@ -41,11 +41,11 @@
     <!-- home section starts  -->
     <app-home></app-home>
 
-    <!-- service section starts  -->
-    <app-services></app-services>
-
     <!-- about section starts  -->
     <app-about></app-about>
+
+    <!-- service section starts  -->
+    <app-services></app-services>
 
     <!-- gallery section starts  -->
     <app-gallery></app-gallery>
