@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasu Events</title>
+
+    <!--swiper css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <!-- <a href="#" class="logo"><span>Vasu</span>Events</a> -->
+       <a href="#" class="logo"><img src="assets\logo2.jpg"></a>
+
+      <nav [ngClass]="{'active': isMenuOpen}" class="navbar">
+        <a href="#home" class="nav-link" (click)="toggleMenu()">Home</a>
+        <a href="#about" class="nav-link" (click)="toggleMenu()">About</a>
+        <a href="#service" class="nav-link" (click)="toggleMenu()">Service</a>
+        <a href="#gallery" class="nav-link" (click)="toggleMenu()">Gallery</a>
+        <!-- <a href="#price" class="nav-link">prices</a> -->
+        <a href="#review" class="nav-link" (click)="toggleMenu()">Review</a>
+        <a href="#contact" class="nav-link" (click)="toggleMenu()">Contact</a>
+      </nav>
+
+      <div id="menu-bars" (click)="toggleMenu()" class="fas fa-bars"></div>
+    </header>
+
+    <!-- home section starts  -->
+    <app-home></app-home>
+
+    <!-- about section starts  -->
+    <app-about></app-about>
+
+    <!-- service section starts  -->
+    <app-services></app-services>
+
+    <!-- gallery section starts  -->
+    <app-gallery></app-gallery>
+
+    <!-- price section starts  -->
+    <!-- <app-prices></app-prices> -->
+
+    <!-- review section starts  -->
+    <app-reviews></app-reviews>
+    <!-- contact section starts  -->
+    <app-connect></app-connect>
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a > <i class="fas fa-phone"></i> +91-7678600764 </a>
+          <a > <i class="fas fa-phone"></i> +91-7678600764 </a>
+          <!-- href="https://mail.google.com/mail/?view=cm&fs=1&to=dvm843@gmail.com" -->
+          <a  target="_blank"> <i class="fas fa-envelope"></i> vasuevents2&#64;gmail.com </a>
+          <a href="https://www.google.com/maps?q=Ghaziabad,+India+201002" target="_blank">
+            <i class="fas fa-map-marker-alt"></i> Ghaziabad, india - 201002
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        <p><small>&copy; Copyright 2024, VasuEvents All Rights Reserved</small></p>
+      </div>
+    </section>
+
+  </body>
+</html>

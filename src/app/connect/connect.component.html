@@ -1,0 +1,22 @@
+  <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="name" [(ngModel)]="name" name="name">
+          <input type="email" placeholder="email" [(ngModel)]="email" name="email">
+        </div>
+        <div class="inputBox">
+          <input type="tel" placeholder="Number" [(ngModel)]="mob" name="mob">
+          <input type="text" placeholder="subject" [(ngModel)]="subject" name="subject">
+        </div>
+        <textarea
+          name=""
+          placeholder="message"
+          id=""
+          cols="30"
+          rows="10" [(ngModel)]="message" name="message"
+        ></textarea>
+        <input type="submit" value="send message" class="btn" (click)="sendmail(); $event.preventDefault();" >
+      </form>
+    </section>
